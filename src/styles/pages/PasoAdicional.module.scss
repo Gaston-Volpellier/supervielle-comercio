@@ -1,0 +1,35 @@
+@use "@/styles/components/Forms.module.scss";
+@use "@/styles/components/Fonts.module.scss";
+@import "@/styles/helpers/variables";
+
+.descriptionCard {
+  padding: 16px;
+  gap: 16px;
+  background: $white;
+  max-width: 868px;
+}
+
+.descriptionContainer {
+  margin: 0;
+  padding: 2px;
+}
+
+.smallTableFormat {
+  th,
+  td {
+    padding: 16px 16px;
+  }
+
+  tbody > tr:last-child > td {
+    border-bottom: 0;
+  }
+}
+
+.extraHeader {
+  margin: 0 !important;
+  padding: 32px 0;
+
+  & > * {
+    padding: 0;
+  }
+}

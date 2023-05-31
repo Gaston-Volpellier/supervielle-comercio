@@ -1,0 +1,8 @@
+@use "@/styles/components/Forms.module.scss";
+@use "@/styles/components/Fonts.module.scss";
+@import "@/styles/helpers/variables";
+
+.errorIcon {
+  font-size: 122px;
+  color: $red-primary;
+}

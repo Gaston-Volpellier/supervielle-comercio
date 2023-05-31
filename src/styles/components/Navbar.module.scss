@@ -1,0 +1,51 @@
+@import "@/styles/helpers/variables";
+
+.topNav {
+  height: 72px;
+  background-color: $white;
+  align-content: center;
+  padding: 24px !important;
+  box-shadow: 0px 15px 6px rgba(72, 70, 82, 0.01),
+    0px 9px 5px rgba(72, 70, 82, 0.03), 0px 4px 4px rgba(72, 70, 82, 0.05),
+    0px 1px 2px rgba(72, 70, 82, 0.05), 0px 0px 0px rgba(72, 70, 82, 0.06);
+  div {
+    display: flex;
+  }
+}
+
+.closeButton {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px;
+  width: 92px;
+  height: 36px;
+  background: rgba(202, 202, 214, 0.12);
+  border-radius: 8px;
+  color: $black;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+
+.back {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: $black;
+  cursor: pointer;
+  .backText {
+    font-size: 16px;
+    margin-left: 15px;
+    line-height: 21px;
+  }
+}

@@ -1,0 +1,45 @@
+@import "@/styles/helpers/mixins";
+
+.mainForm {
+  max-width: 648px;
+  margin: auto;
+  .formItem {
+    margin-top: 8px;
+    padding: 16px;
+    max-width: 648px;
+    height: 56px;
+  }
+}
+
+.formContainer {
+  padding: 32px 24px;
+  margin-right: 0px;
+}
+
+.formLabel {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  font-feature-settings: "tnum" on, "lnum" on;
+  margin-bottom: 0px;
+}
+
+.formInput {
+  padding: 16px;
+  gap: 8px;
+}
+
+.formGroup {
+  margin-bottom: 32px;
+}
+.selectMiddle {
+  padding: 0 8px;
+}
+.left {
+  @include media-md {
+    margin-bottom: 32px;
+  }
+}

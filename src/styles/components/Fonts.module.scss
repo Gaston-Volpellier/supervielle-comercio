@@ -1,0 +1,100 @@
+@import "@/styles/helpers/variables";
+
+.pageTitle {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.titlePrimary {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: $black;
+}
+
+.titleSecondary {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: $black;
+}
+
+.titleLarge {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: $black;
+}
+
+.titleBold {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: $black;
+}
+
+.titleSmallBold {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: $black;
+}
+
+.cardTitle {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: $lightGray;
+}
+
+.descriptionPrimary {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $primary-color;
+}
+
+.descriptionSecondary {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: $primary-color;
+  margin-top: 8px;
+  &.black {
+    color: $black;
+  }
+}
+
+.linkBlack {
+  color: $black;
+}

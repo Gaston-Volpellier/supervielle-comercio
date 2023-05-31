@@ -1,0 +1,105 @@
+@import "helpers/variables";
+@import "helpers/mixins.scss";
+
+:root {
+  --primary-color: $primary-color;
+  --secondary-color: $secondary-color;
+  --red: $red-primary;
+  --black: $black;
+  --white: $white;
+  --gray: $gray;
+}
+
+.button-primary {
+  width: 256px;
+  height: 48px;
+  background: $red-primary;
+  @include border-radius(8px);
+  border: none;
+  color: $white;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+
+.button-primary:hover,
+.button-primary:active {
+  background-color: darken($primary-color, 2%) !important;
+  background: darken($primary-color, 2%) !important;
+}
+
+.button-primary:disabled {
+  background-color: #e1e1eb;
+  color: #898999;
+}
+
+.button-secondary {
+  width: 256px;
+  height: 48px;
+  background: #cacad61f;
+  border-radius: 8px;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: $black;
+  border: none;
+}
+
+.button-secondary:hover,
+.button-secondary:active {
+  background-color: $secondary-color !important;
+  color: $white !important;
+}
+
+.button-secondary:disabled {
+  background-color: darken($secondary-color, 2%);
+  color: $white;
+}
+
+.mainHeight {
+  min-height: calc(100vh - 241px);
+}
+
+.react-select-st {
+  padding: 0 !important;
+  .css-13cymwt-control, .css-t3ipsp-control {
+    height: 56px !important; 
+    min-height: 56px !important;
+    &:hover {
+      border-color: #ced4da;
+      box-shadow: none;
+    }
+  }
+  .css-1xc3v61-indicatorContainer {
+    color: #838383;
+  }
+  .css-1u9des2-indicatorSeparator {
+    display: none;
+  }
+  .css-1fdsijx-ValueContainer {
+    padding-left: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: white;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+@media print {
+  body {-webkit-print-color-adjust: exact;}
+}

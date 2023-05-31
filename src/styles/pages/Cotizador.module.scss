@@ -1,0 +1,319 @@
+@use "@/styles/components/Forms.module.scss";
+@use "@/styles/components/Fonts.module.scss";
+@import "@/styles/helpers/variables";
+@import "@/styles/helpers/mixins";
+
+.tableContainer {
+  @include media-md {
+    padding: 0px;
+    width: 100%;
+  }
+}
+
+.tableCard {
+  padding: 16px;
+  margin-bottom: 24px;
+  border: 1px solid #f2f2f8;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.tableHeader {
+  .main {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  padding-left: 8px !important;
+  color: $lightGray;
+  border: none;
+  &Red {
+    color: #c52d52;
+  }
+}
+
+.tableFormat {
+  border: 1px #f2f2f8;
+  th,
+  tr,
+  td {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    font-feature-settings: "tnum" on, "lnum" on;
+    vertical-align: middle;
+  }
+  td {
+    @include media-md {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
+}
+
+.mainTable {
+  td {
+    vertical-align: top !important;
+    & > div:first-child {
+      min-height: 73px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.finalRow {
+  td {
+    vertical-align: top !important;
+    & > div:first-child {
+      min-height: auto;
+      height: 75% !important;
+    }
+  }
+}
+
+.descriptionSpacing {
+  margin-bottom: 10px;
+  @include media-md {
+    margin-bottom: 16px;
+  }
+}
+.cardContainerMain {
+  margin-bottom: 8px;
+  @include media-md {
+    margin-bottom: 16px;
+  }
+}
+.cardContainerSingle {
+  margin-bottom: 16px;
+}
+
+.tableSpacing {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.colLong {
+  width: 40%;
+  @include media-sm {
+    width: 65%;
+  }
+}
+
+.colRegular {
+  width: 12%;
+  text-align: center;
+  @include media-sm {
+    width: 25%;
+  }
+}
+
+.inputSize {
+  width: 134px;
+  height: 56px;
+}
+
+.drawerInutSize {
+  width: 352px;
+  height: 56px;
+}
+
+.drawerSelect {
+  width: 352px;
+  height: 56px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+
+.drawerButton {
+  height: 36px;
+  width: 74px;
+}
+
+.canvasHeader {
+  padding: 24px 24px 16px 24px;
+}
+
+.canvasBody {
+  padding: 16px 24px 40px 24px;
+}
+
+.drawerGroup {
+  margin-bottom: 16px;
+}
+
+/* Disabled checkbox */
+.disabledCheck input:checked {
+  background-color: $lightGray;
+  border: $lightGray;
+}
+
+.checkboxStyle {
+  input {
+    margin-right: 5px;
+  }
+  input:checked {
+    background-color: $red-primary;
+    border: $red-primary;
+  }
+}
+.selectionContainer {
+  margin-bottom: 12px;
+  margin-left: auto;
+  width: 150px;
+  button {
+    width: 100%;
+  }
+}
+.totals {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: black;
+}
+
+.drawer {
+  border: 1px solid #f2f2f8;
+  box-shadow: 0px 76px 31px rgba(72, 70, 82, 0.01),
+    0px 43px 26px rgba(72, 70, 82, 0.04), 0px 19px 19px rgba(72, 70, 82, 0.07),
+    0px 5px 10px rgba(72, 70, 82, 0.08), 0px 0px 0px rgba(72, 70, 82, 0.08);
+  border-radius: 16px 0px 0px 16px;
+  background: $white;
+}
+
+.drawerCard {
+  background: $white;
+  padding: 16px;
+  border: 1px solid #f2f2f8;
+  border-radius: 16px;
+  cursor: pointer;
+  align-items: center;
+  margin-bottom: 24px;
+  @include media-md {
+    margin-bottom: 16px;
+  }
+}
+
+.drawerContainer {
+  min-height: 78px;
+}
+
+.drawerMobile {
+  width: 100%;
+  height: 80%;
+  border: 1px solid #f2f2f8;
+  box-shadow: 0px -14px 5px rgba(72, 70, 82, 0.01),
+    0px -8px 5px rgba(72, 70, 82, 0.03), 0px -3px 3px rgba(72, 70, 82, 0.05),
+    0px -1px 2px rgba(72, 70, 82, 0.05), 0px 0px 0px rgba(72, 70, 82, 0.06);
+  border-radius: 16px 16px 0px 0px;
+}
+
+.cardLink {
+  border: 1px solid #f2f2f8;
+  border-radius: 16px;
+  padding: 16px;
+  text-decoration: none;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: $black;
+}
+
+.marginRight {
+  margin-right: 16px;
+}
+.iconStack {
+  vertical-align: top;
+}
+
+.bgIcon {
+  z-index: 1;
+  color: #f9f8ff;
+  border-radius: 16px;
+  width: 40px;
+  height: 40px;
+}
+
+.frontIcon {
+  z-index: 2;
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+}
+
+.iconStyleLarge {
+  font-size: 21px;
+  color: $black;
+}
+
+.iconStyleSmall {
+  font-size: 16px;
+  color: $black;
+}
+
+.checkIcon {
+  width: 40px;
+  height: 40px;
+  color: #14ae5c;
+}
+
+.drawerTitle {
+  position: fixed;
+  right: calc(50% - 46px);
+}
+
+.mobileDawerTitle {
+  margin-left: 40px;
+}
+
+.drawerTitleItem {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: $black;
+}
+
+.bold {
+  color: #000000;
+  font-weight: 700 !important;
+  line-height: 20px !important;
+}
+
+.red {
+  color: $red-primary !important;
+}
+
+.redSecondary {
+  color: $red-secondary !important;
+}
+
+.mobileInputHeight {
+  height: 56px;
+}
+
+.noBorder {
+  border: none;
+}
+
+.emptyRow {
+  height: 24px;
+}
+
+.emptyHeader {
+  min-width: 20px;
+}

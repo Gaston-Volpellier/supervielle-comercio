@@ -1,0 +1,105 @@
+// MIXINS
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin media-xxs {
+  @media screen and (max-width: 450px) {
+    @content;
+  }
+}
+
+@mixin media-xs {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (max-width: 1450px) {
+    @content;
+  }
+}
+
+// FONT MIXINS
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font($family, $weight, $size, $style) {
+  font-family: $family;
+  font-weight: $weight;
+  font-size: $size;
+  font-size: calculateRem($size);
+  font-style: $style;
+}
+
+@mixin font-size($size) {
+  font-size: calculateRem($size);
+}
+
+@function calculateEm($size) {
+  $emSize: $size / 16px;
+  @return $emSize * 1em;
+}
+
+@mixin line-height($size) {
+  line-height: calculateRem($size);
+}
+
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: calculateEm($top);
+  padding-right: calculateEm($right);
+  padding-bottom: calculateEm($bottom);
+  padding-left: calculateEm($left);
+}
+
+// CUSTOM SCROLLBAR
+
+@mixin scrollbars(
+  $size,
+  $foreground-color,
+  $background-color: mix($foreground-color, white, 50%)
+) {
+  // For Google Chrome
+  ::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}

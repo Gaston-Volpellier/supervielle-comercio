@@ -1,0 +1,10 @@
+@use "./Fonts.module.scss";
+
+.footerSize {
+  background: rgba(202, 202, 214, 0.12);
+  padding: 32px;
+  p {
+    margin: 0;
+    font-size: 14px;
+  }
+}
